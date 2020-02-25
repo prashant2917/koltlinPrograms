@@ -1,4 +1,5 @@
 val array= arrayOf(10,7,2,3,8,1)
+//main function
 fun main() {
 
 
