@@ -1,3 +1,4 @@
 # koltlinPrograms
-Programs asked in interview to check the candidate logic
-add the function for any problem statement that can be asked in interview
+Programs that can  asked in interview to check the candidate logic.
+You are free to add new questions by creating separate function in project.
+
