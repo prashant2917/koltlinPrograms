@@ -15,6 +15,9 @@ print("enter input")
 
 
 }
+/*
+* checks oddd number in array
+* */
 fun isOdd(index:Int,n:Int){
     if(index<n) {
 
@@ -28,6 +31,9 @@ fun isOdd(index:Int,n:Int){
 
 }
 
+/**
+ * convert decimal number into array
+ */
 fun convertDecimalToBinary(decimal:Long){
     var  decimaNumber=decimal
     var binaryString= StringBuffer()
@@ -40,6 +46,10 @@ fun convertDecimalToBinary(decimal:Long){
     print("binary number is ${binaryString.reverse()}")
 
 }
+
+/**
+ * converts decimal number to hex
+ */
 fun convertDecimalToHex(decimal: Long){
     val hex = charArrayOf('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F')
     var decimalNumber=decimal
@@ -56,6 +66,9 @@ fun convertDecimalToHex(decimal: Long){
 
 }
 
+/**
+ * converts decimal to octal
+ */
 fun convertDecimalToOctal(decimal: Long){
     val octaldigit = charArrayOf('0', '1', '2', '3', '4', '5', '6', '7')
     var decimalNumber=decimal
@@ -68,6 +81,9 @@ fun convertDecimalToOctal(decimal: Long){
     println("octal number is ${result.reverse()}")
 }
 
+/**
+ * reverse a given decimal number
+ */
 fun reverseNum(number:Long){
     var reversed=0L
     var num=number
@@ -83,6 +99,9 @@ fun reverseNum(number:Long){
 
 }
 
+/**
+ * reverse a words for given sentence
+ */
 fun reverseWord(sentence:String){
     val strArray=sentence.split(" ")
     var size=strArray.size
