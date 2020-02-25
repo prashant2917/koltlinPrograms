@@ -16,7 +16,7 @@ print("enter input")
 
 }
 /*
-* checks oddd number in array
+* checks odd number in array
 * */
 fun isOdd(index:Int,n:Int){
     if(index<n) {
