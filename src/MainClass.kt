@@ -11,9 +11,10 @@ print("enter input")
     //reverseNum(input!!.toLong())
 
     if (input != null) {
-       // reverseWord(input)
+        reverseWord(input)
         //isPallindrome(input)
 
+     // isVowelOrConstant(input[0])
 
     }
 
@@ -140,6 +141,13 @@ fun largestOfThree(num1:Int,num2:Int,num3:Int){
         num1>num2 && num1>num3-> println("$num1 is greater")
         num2>num1 && num2> num3-> println("$num2 is greater")
         else-> println("$num3 is greater")
+    }
+
+}
+fun isVowelOrConstant(input:Char){
+    when(input){
+        'a','e','i','o','u'-> println("vowels")
+        else-> println("constants")
     }
 }
 
