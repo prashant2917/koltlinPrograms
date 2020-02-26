@@ -2,8 +2,10 @@ val array= arrayOf(10,7,2,3,8,1)
 //main function
 fun main() {
 
-
 print("enter input")
+
+
+
    val input= readLine()
     //convertDecimalToOctal(input!!.toLong())
     //reverseNum(input!!.toLong())
@@ -117,22 +119,32 @@ fun reverseWord(sentence:String){
 /**
  * check if string is pallindrome or not
  */
-fun isPallindrome(word:String){
-   var size=word.length
-    var endIndex=size-1;
-    var reverseString=""
-    for(i in endIndex downTo 0){
+fun isPallindrome(word:String) {
+    var size = word.length
+    var endIndex = size - 1;
+    var reverseString = ""
+    for (i in endIndex downTo 0) {
 
-        reverseString=reverseString+word[i]
+        reverseString = reverseString + word[i]
     }
 
-    if(word.equals(reverseString)){
+    if (word.equals(reverseString)) {
         println("Pallindrome")
-    }
-    else{
+    } else {
         println(" Not Pallindrome")
     }
-
-
-
 }
+
+fun largestOfThree(num1:Int,num2:Int,num3:Int){
+    when{
+        num1>num2 && num1>num3-> println("$num1 is greater")
+        num2>num1 && num2> num3-> println("$num2 is greater")
+        else-> println("$num3 is greater")
+    }
+}
+
+
+
+
+
+
