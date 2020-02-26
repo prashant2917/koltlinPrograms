@@ -9,7 +9,9 @@ print("enter input")
     //reverseNum(input!!.toLong())
 
     if (input != null) {
-        reverseWord(input)
+       // reverseWord(input)
+        isPallindrome(input)
+
     }
 
 
@@ -108,4 +110,28 @@ fun reverseWord(sentence:String){
     for(i in size-1 downTo 0){
         print(" ${strArray[i]}")
     }
+
+}
+
+/**
+ * check if string is pallindrome or not
+ */
+fun isPallindrome(word:String){
+   var size=word.length
+    var endIndex=size-1;
+    var reverseString=""
+    for(i in endIndex downTo 0){
+
+        reverseString=reverseString+word[i]
+    }
+
+    if(word.equals(reverseString)){
+        println("Pallindrome")
+    }
+    else{
+        println(" Not Pallindrome")
+    }
+
+
+
 }
