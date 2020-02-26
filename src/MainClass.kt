@@ -10,7 +10,8 @@ print("enter input")
 
     if (input != null) {
        // reverseWord(input)
-        isPallindrome(input)
+        //isPallindrome(input)
+
 
     }
 
@@ -20,14 +21,14 @@ print("enter input")
 /*
 * checks odd number in array
 * */
-fun isOdd(index:Int,n:Int){
-    if(index<n) {
+fun isOdd(array: Array<Int>,index:Int){
+    if(index<array.size) {
 
         if (array[index] % 2 != 0) {
             println("${array[index]} is odd")
         }
         val nextIndex = index + 1;
-        isOdd(nextIndex, n)
+        isOdd(array,nextIndex)
     }
 
 
